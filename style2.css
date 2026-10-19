@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.35), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.25), transparent 40%),
+        radial-gradient(circle at 60% 10%, rgba(59, 130, 246, 0.25), transparent 40%),
+        #0f0f1a;
+    background-attachment: fixed;
+
+}
+
+header {
+    color: #FFF;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    background: radial-gradient(
+        ellipse at center,
+        #ffffff 0%,
+        #00ffff 15%,
+        #0066ff 30%,
+        #8a2be2 45%,
+        #ff00ff 60%,
+        #ff1493 75%,
+        #ff4500 90%,
+        #ffff00 100%
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 0 0 12px rgba(255, 0, 255, 0.35);
+
+
+}
+
+:root {                                          /* Zona donde guardo los colores */
+  --color-1: #667eea;                            /* Color 1: azul violeta */
+  --color-2: #764ba2;                            /* Color 2: morado */
+  --color-3: #f093fb;                            /* Color 3: rosa suave */
+}
+
+label {                                          /* Aplica el estilo a todos los carteles */
+  display: inline-block;                         /* Lo trata como una cajita con espacio propio */
+  margin: 14px 0 6px 4px;                        /* Espacio de fuera: arriba, derecha, abajo, izquierda */
+  padding-bottom: 3px;                           /* Espacio de dentro, abajo, para que no se corte la letra */
+  font-family: "Segoe UI", Arial, sans-serif;    /* Tipo de letra (si no existe, usa la siguiente) */
+  font-size: 15px;                               /* Tamaño de la letra */
+  font-weight: 700;                              /* Grosor: 700 es negrita */
+  letter-spacing: 0.6px;                         /* Separa un poquito las letras entre sí */
+
+  background: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3));
+                                                 /* Crea un degradado de izquierda a derecha con los 3 colores */
+  -webkit-background-clip: text;                 /* Recorta el degradado con la forma de las letras (Chrome, Safari) */
+  background-clip: text;                         /* Lo mismo, para el resto de navegadores */
+  -webkit-text-fill-color: transparent;          /* Hace invisible el color normal para que se vea el degradado */
+}
