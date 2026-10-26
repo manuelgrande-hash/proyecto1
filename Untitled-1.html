@@ -1,52 +1,97 @@
 <!DOCTYPE html>
-    <meta charset="UTF-8">
-<html>
-    <head>
-        <title>Mi página web</title>
-        <link rel="stylesheet" href="style2.css">
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Manuel Grande Fernandez</title>
+    <link rel="stylesheet" href="C:\Users\manue\Desktop\Asignaturas\Lenguaje de marca\style3.css">
 
-    </head>
-    <body>
-        <header>
-            Titulo
-        </header>
-        <form action="Respuesta.html">
-            <fieldset>
-                <legend> Formulario de contacto</legend>
+	<!--
+	==========================================
+	EJERCICIO: ESTRUCTURA BÁSICA DE HTML
+	Instrucciones:
+	1. Escribe tu nombre y el título de tu sitio.
+	2. Rellena cada etiqueta vacía según indica el comentario.
+	3. No borres la estructura: solo añade contenido.
+	==========================================
+	-->
+	<base>
+</head>
+<body>
 
-                        <br><label for="Nombre"> Nombre </label >
-                        <br><input type="text" id="Nombre" placeholder="Tu Nombre" name="Nombre" required minlength="2" maxlength="50">
-                        <br><label for="Apellido"> Apellido </label ></br>
-                        <br><input type="text" id="Apellido" placeholder="tu Apellido" name="Apellido" minlength="2" maxlength="50">
-                        <br><label for="email"> Correo Electronico </label >
-                        <br><input type="email" id="email" placeholder="Mi.Correo@electronico.com" name="Correo" required minlength="2" maxlength="50">
-                        <br><label for="contraseña">Contraseña</label>
-                        <br><input type="password" id="contraseña" name="Contraseña" required minlength="2" maxlength="50">
-                        <br><label for="telefono">telefona</label>
-                        <br><input type="tel" id="telefono" name="telefono" pattern="[0-9+ ] {9,15}" >
-                        <br><label for="URL">url</label>
-                        <br><input type="url" id="url" name="url" placeholder="www.direcion.com" >
-                        <br><label for="edad">Tu edad</label>
-                        <br><input type="number" id="edad" name="edad" min="18" max="99" >
-                        <br><label for="fecha">fecha</label>
-                        <br><input type="date" id="fecha" name="fecha"  >
-                        <br><label for="hora">hora</label>
-                        <br><input type="time" id="hora" name="hora" min="0:01" max="23:59">
+	<!-- ================= CABECERA ================= -->
+	<header>
+		<img src="images.jpg" alt="Logo de El Mentalista">
+		<h1>EL Mentalista</h1>          <!-- TÍTULO PRINCIPAL -->
+		<p>Él lee entre las mentiras</p>            <!-- ESLOGAN -->
+	</header>
 
-            </fieloset>
-            <fieloset>
+	<!-- ================= MENÚ ================= -->
+	<nav>
+		<ul>
+			<li><a href="#p1">Inicio</a></li>
+			<li><a href="#p2">Servicios</a></li>
+			<li><a href="#p3">Sobre mí</a></li>
+			<li><a href="#p4">Contacto</a></li>
+		</ul>
+	</nav>
 
-                     <legend>--Elige el metodo de contacto--</legend>
-                     <input type="radio" id="contacto email" name="contacto" value="email">
-                     <label for="contacto_email">Telefono</label>
-                     <input type="radio" id="contacto telefono" name="contacto" value="telefono">
-                     <label for="telefono">Telefono</label>
-                     <input type="radio" id="contacto cartas" name="contacto" value="Cartas">
-                     <label for="cartas">Cartas</label>
-                     
-            </fieloset>
-            
-        </form>
-    </body>
+	<!-- ================= PESTAÑAS ================= -->
+	<main>
 
+		<!-- PESTAÑA 1 -->
+		<div class="pestana" name="p1" id="p1">
+			<input type="radio" name="pestana" checked>
+			<label for="p1">Inicio</label>   <!-- TÍTULO DE LA PESTAÑA 1 -->
+
+			<div class="contenido"> 
+				<h2>Bienvenido a la mente de un mentalista</h2>               <!-- TÍTULO DEL CONTENIDO -->
+				<p>Descubre el arte de la deducción, el análisis del lenguaje corporal y la lectura del pensamiento. Aquí aprenderás cómo interpretar cada gesto oculto.</p>                <!-- TEXTO DE LA PESTAÑA 1 -->
+			</div>
+		</div>
+
+		<!-- PESTAÑA 2 -->
+		<div class="pestana" name="p2" id="p2">
+			<input type="radio" name="pestana" id="p2">
+			<label for="p2">Servicios</label>   <!-- TÍTULO DE LA PESTAÑA 2 -->
+
+			<div class="contenido" >
+				<h2>Nuestros Servicios Profesionales</h2>
+				<p>Ofrecemos espectáculos de mentalismo en directo, talleres de comunicación no verbal, análisis de conducta y conferencias exclusivas.</p>                <!-- TEXTO DE LA PESTAÑA 2 -->
+			</div>
+		</div>
+
+		<!-- PESTAÑA 3 -->
+		<div class="pestana" name="p3" id="p3">
+			<input type="radio" name="pestana" id="p3">
+			<label for="p3">Sobre mí</label>   <!-- TÍTULO DE LA PESTAÑA 3 -->
+
+			<div class="contenido">
+				<h2>Conoce al Mentalista</h2>
+				<ul>
+					<li>Especialista en lenguaje no verbal y microexpresiones</li>        <!-- ELEMENTO 1 -->
+					<li>Mentalista profesional con trayectoria internacional</li>        <!-- ELEMENTO 2 -->
+					<li>Conferencista sobre persuasión y lectura en frío</li>        <!-- ELEMENTO 3 -->
+				</ul>
+			</div>
+		</div>
+
+		<!-- PESTAÑA 4 (Añadida para completar el menú) -->
+		<div class="pestana" name="p4" id="p4">
+			<input type="radio" name="pestana" id="p4">
+			<label for="p4">Contacto</label>
+
+			<div class="contenido">
+				<h2>Ponte en contacto</h2>
+				<p>¿Quieres contratar un espectáculo o una asesoría? Escríbenos a contacto@elmentalista.es o llámanos.</p>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- ================= PIE DE PÁGINA ================= -->
+	<footer>
+		<p>Manuel Grande Fernández -- 2026 -- Todos los derechos reservados</p>
+	</footer>
+
+</body>
 </html>
