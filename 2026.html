@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscripción al curso de informática</title>
+    <link rel="stylesheet" href="30/10/2026.css" />
+  </head>
+  <body>
+    <form action="confirmacion.html" method="get">
+      <h1>Inscripción al curso de informática</h1>
+
+      <fieldset>
+        <legend>Datos de inscripción</legend>
+
+        <p>
+          <label for="nombre">Nombre y apellidos</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ej: Laura Gómez Pérez"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ejemplo@correo.com"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="nacimiento">Fecha de nacimiento</label>
+          <input type="date" id="nacimiento" name="nacimiento" />
+        </p>
+
+        <p>
+          <span class="titulo">Sexo</span>
+          <input type="radio" id="mujer" name="sexo" value="mujer" />
+          <label for="mujer" class="opcion">Mujer</label>
+          <input type="radio" id="hombre" name="sexo" value="hombre" />
+          <label for="hombre" class="opcion">Hombre</label>
+          <input type="radio" id="otro" name="sexo" value="otro" />
+          <label for="otro" class="opcion">Otro</label>
+        </p>
+
+        <p>
+          <label for="curso">Curso al que se inscribe</label>
+          <select id="curso" name="curso">
+            <option value="ofimatica">Ofimática</option>
+            <option value="programacion">Programación básica</option>
+            <option value="diseno">Diseño web</option>
+            <option value="redes">Redes y sistemas</option>
+          </select>
+        </p>
+
+        <p>
+          <span class="titulo">Aficiones o intereses</span>
+          <input
+            type="checkbox"
+            id="videojuegos"
+            name="aficiones"
+            value="videojuegos"
+          />
+          <label for="videojuegos" class="opcion">Videojuegos</label>
+          <input type="checkbox" id="musica" name="aficiones" value="musica" />
+          <label for="musica" class="opcion">Música</label>
+          <input
+            type="checkbox"
+            id="lectura"
+            name="aficiones"
+            value="lectura"
+          />
+          <label for="lectura" class="opcion">Lectura</label>
+          <input
+            type="checkbox"
+            id="deporte"
+            name="aficiones"
+            value="deporte"
+          />
+          <label for="deporte" class="opcion">Deporte</label>
+        </p>
+
+        <p>
+          <label for="comentarios">Comentarios</label>
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            rows="5"
+            placeholder="Escribe aquí tus observaciones"
+          ></textarea>
+        </p>
+
+        <p class="botones">
+          <button type="submit" class="enviar">Enviar</button>
+          <button type="reset" class="borrar">Borrar</button>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
